@@ -298,8 +298,11 @@
     .woods{grid-template-columns:1fr;}
     .steps{grid-template-columns:1fr;}
     .foot-in{grid-template-columns:1fr;}
-    .nav{flex-wrap:wrap;padding:14px 16px 10px;row-gap:8px;}
-    .navlinks{width:100%;gap:14px;font-size:11.5px;justify-content:space-between;}
+    .nav{flex-wrap:wrap;padding:14px 16px 0;row-gap:4px;}
+    .navlinks{width:100%;gap:0;font-size:12.5px;justify-content:space-between;margin-top:6px;border-top:1px solid var(--line);}
+    .navlinks a{flex:1 1 auto;text-align:center;white-space:nowrap;letter-spacing:0;padding:15px 6px 13px;border-bottom:2px solid transparent;}
+    .reserve summary,.reserve-opts a{display:inline-block;padding:10px 0;}
+    .reserve-opts{gap:26px;margin-top:0;}
     .brand{font-size:17px;}
   }
   .navlinks,
@@ -341,15 +344,15 @@
   .lote-price strong{font-family:"Archivo Black",sans-serif;font-size:17px;color:var(--ink);margin-left:6px;font-weight:400;}
   .lote-price.lp-prox{padding:0;margin:14px 0 0;}
   @media (max-width:640px){.lote-price{padding:0 16px;}.lote-price.lp-prox{padding:0;}}
-  .lote-row{max-width:1680px;margin:28px auto 0;padding:0 32px;display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px 28px;}
-  .lote-row-prox{padding:0;margin:22px 0 0;max-width:none;}
-  .lote-name{font-size:17px;font-weight:400;line-height:1.4;color:var(--ink);}
+  .lote-row{max-width:1320px;margin:32px auto 0;padding:0 32px;display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px 28px;}
+  .lote-row-prox{padding:0;margin:26px 0 0;max-width:none;}
+  .lote-name{font-size:22px;font-weight:400;line-height:1.4;color:var(--ink);}
   .lote-buy{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px 20px;}
-  .lote-amount{font-size:17px;font-weight:400;line-height:1.4;color:var(--ink);}
+  .lote-amount{font-size:22px;font-weight:400;line-height:1.4;color:var(--ink);}
   .lote-reserve{margin-top:2px;}
-  .lote-reserve summary{font-size:15px;}
+  .lote-reserve summary{font-size:17px;padding-top:4px;}
   #panel-inicio .lote-buy{display:none;}
-  @media (max-width:640px){.lote-row{padding:0 16px;}.lote-row-prox{padding:0;}.lote-name,.lote-amount{font-size:15px;}}
+  @media (max-width:640px){.lote-row{padding:0 32px;}.lote-row-prox{padding:0;}.lote-name,.lote-amount{font-size:18px;}.lote-reserve summary{font-size:16px;}}
 </style>
 </head>
 <body>
